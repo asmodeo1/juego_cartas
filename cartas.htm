@@ -90,11 +90,11 @@
           <img src="imagenes/monstruo8.png" alt="monstruo8" />
           <p>fuerza: 3</p>
         </div>
-        <div class="d-inline-block m-2 carta neptuno" data-fuerza="2">
+        <div class="d-inline-block m-2 carta neptuno" data-fuerza="2" data-planeta="jupiter">
           <img src="imagenes/monstruo9.png" alt="monstruo9" />
           <p>fuerza: 2</p>
         </div>
-        <div class="d-inline-block m-2 carta neptuno" data-fuerza="1">
+        <div class="d-inline-block m-2 carta neptuno" data-fuerza="1" data-planeta="jupiter">
           <img src="imagenes/monstruo10.png" alt="monstruo10" />
           <p>fuerza: 1</p>
         </div>
@@ -103,13 +103,16 @@
         id="elegidos"
         class="offset-2 col-5 border border-1 bg-success-subtle text-center text-uppercase"
       >
+      <h2 class="border-bottom border-1 border-black">
+        Elegidos
+      </h2>
         <h2 class="border-bottom border-1 border-black">
           Fuerza: <span id="fuerza">0</span>
         </h2>
       </div>
     </section>
     <div id="mensaje">
-      <p>No puedes seleccionar dos del mismo tipo</p>
+      <p>No puedes seleccionar dos del mismo planeta</p>
       <input type="button" value="cerrar" id="cerrar" class="btn btn-danger" />
     </div>
   </body>
