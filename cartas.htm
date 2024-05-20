@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- letra: https://www.dafont.com/es/alien-energy.font
+      imágenes: https://www.flaticon.com
+    -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cartas</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="estilos.css">
+    <script src="cartas.js" defer></script>
+  </head>
+  <body>
+    <header class="w-50 m-auto text-center">
+      <h1>Cartas alienígenas</h1>
+    </header>
+    <section class="row m-4">
+      <div
+        id="disponibles"
+        class="col-5 border border-1 bg-danger-subtle text-center text-uppercase"
+      >
+        <h2 class="border-bottom border-1 border-black">Disponibles</h2>
+        <div
+          class="d-inline-block m-2 carta marte"
+          data-fuerza="3"
+          data-planeta="marte"
+        >
+          <img src="imagenes/monstruo1.png" alt="monstruo1" />
+          <p>fuerza: 3</p>
+        </div>
+        <div
+          class="d-inline-block m-2 carta marte"
+          data-fuerza="4"
+          data-planeta="marte"
+        >
+          <img src="imagenes/monstruo2.png" alt="monstruo2" />
+          <p>fuerza: 4</p>
+        </div>
+        <div
+          class="d-inline-block m-2 carta saturno"
+          data-fuerza="2"
+          data-planeta="saturno"
+        >
+          <img src="imagenes/monstruo3.png" alt="monstruo3" />
+          <p>fuerza: 2</p>
+        </div>
+        <div
+          class="d-inline-block m-2 carta saturno"
+          data-fuerza="1"
+          data-planeta="saturno"
+        >
+          <img src="imagenes/monstruo4.png" alt="monstruo4" />
+          <p>fuerza: 1</p>
+        </div>
+        <div
+          class="d-inline-block m-2 carta venus"
+          data-fuerza="4"
+          data-planeta="venus"
+        >
+          <img src="imagenes/monstruo5.png" alt="monstruo5" />
+          <p>fuerza: 3</p>
+        </div>
+        <div
+          class="d-inline-block m-2 carta venus"
+          data-fuerza="5"
+          data-planeta="venus"
+        >
+          <img src="imagenes/monstruo6.png" alt="monstruo6" />
+          <p>fuerza: 5</p>
+        </div>
+        <div
+          class="d-inline-block m-2 carta mercurio"
+          data-fuerza="4"
+          data-planeta="mercurio"
+        >
+          <img src="imagenes/monstruo7.png" alt="monstruo7" />
+          <p>fuerza: 4</p>
+        </div>
+        <div
+          class="d-inline-block m-2 carta mercurio"
+          data-fuerza="3"
+          data-planeta="mercurio"
+        >
+          <img src="imagenes/monstruo8.png" alt="monstruo8" />
+          <p>fuerza: 3</p>
+        </div>
+        <div class="d-inline-block m-2 carta neptuno" data-fuerza="2">
+          <img src="imagenes/monstruo9.png" alt="monstruo9" />
+          <p>fuerza: 2</p>
+        </div>
+        <div class="d-inline-block m-2 carta neptuno" data-fuerza="1">
+          <img src="imagenes/monstruo10.png" alt="monstruo10" />
+          <p>fuerza: 1</p>
+        </div>
+      </div>
+      <div
+        id="elegidos"
+        class="offset-2 col-5 border border-1 bg-success-subtle text-center text-uppercase"
+      >
+        <h2 class="border-bottom border-1 border-black">
+          Fuerza: <span id="fuerza">0</span>
+        </h2>
+      </div>
+    </section>
+    <div id="mensaje">
+      <p>No puedes seleccionar dos del mismo tipo</p>
+      <input type="button" value="cerrar" id="cerrar" class="btn btn-danger" />
+    </div>
+  </body>
+</html>

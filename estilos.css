@@ -1,0 +1,57 @@
+@font-face {
+    font-family: alien;
+    src: url(Alien\ Energy.ttf);
+}
+header h1 {
+    font-family: alien;
+    font-size: 4rem;
+    color:darkgreen;
+}
+.carta img {
+    transition-property: transform;
+    transition-duration: 500ms;
+  }
+  .carta img:hover {
+    transform: rotate(-10deg);
+  }
+  .marte,
+  .mercurio,
+  .saturno,
+  .neptuno,
+  .venus {
+    box-shadow: 0 0 2px black;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  .marte {
+    background-color: rgba(238, 255, 0, 0.309);
+  }
+  .mercurio {
+    background-color: rgba(81, 255, 0, 0.309);
+  }
+  .saturno {
+    background-color: rgba(25, 102, 201, 0.309);
+  }
+  .neptuno {
+    background-color: rgba(213, 183, 47, 0.309);
+  }
+  .venus {
+    background-color: rgba(232, 29, 174, 0.309);
+  }
+  #disponibles h2,
+  #elegidos h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  #mensaje {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 2rem;
+    padding: 2rem;
+    width: 100%;
+    height: 75%;
+    display: none;
+  }
